@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>elBaul - Inicio</title>
+    <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <!-- Bulma Version 0.9.0-- >    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    -->
+    <!-- Bulma Version 0.9.0-->
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+    <style type="text/css">
+        html,
+        body {
+            font-family: 'Open Sans';
+        }
+
+        img {
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body onload="observador('')">
+    <section class="hero is-fullheight is-default is-bold">
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="../">
+                            <img src="../images/bulma.png" alt="Logo">
+                        </a>
+                        <span class="navbar-burger burger" data-target="navbarMenu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div id="navbarMenu" class="navbar-menu">
+                        <div class="navbar-end">
+                            <div class="tabs is-right">
+                                <ul>
+                                    <li class="is-active"><a>Home</a></li>
+                                    <li><a href="">Examples</a></li>
+                                    <li><a href="">Features</a></li>
+                                    <li><a href="">Team</a></li>
+                                    <li><a href="login.html">Iniciar sesión</a></li>
+                                    <li><a href="#" onclick="logout()">Cerrar sesión</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="columns is-vcentered">
+                    <div class="column is-5">
+                        <figure class="image is-4by3">
+                            <img src="https://picsum.photos/800/600/?random" alt="Description">
+                        </figure>
+                    </div>
+                    <div class="column is-6 is-offset-1">
+                        <h1 class="title is-2">
+                            Superhero Scaffolding
+                        </h1>
+                        <h2 class="subtitle is-4">
+                            Let this cover page describe a product or service.
+                        </h2>
+                        <br>
+                        <p class="has-text-centered">
+                            <a class="button is-medium is-info is-outlined">
+                                Learn more
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-foot">
+            <div class="container">
+                <div class="tabs is-centered">
+                    <ul>
+                        <li><a>And this is the bottom</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero is-fullheight">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <div class="columns is-8 is-variable ">
+            <div class="column has-text-left">
+              <h1 class="title is-1">Contact Us</h1>
+              <p class="is-size-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eligendi soluta
+                voluptate facere molestiae consequatur.</p>
+              <div class="social-media">
+                <a href="https://facebook.com" target="_blank" class="button is-light is-large"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                <a href="https://instagram.com" target="_blank" class="button is-light is-large"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://twitter.com" target="_blank" class="button is-light is-large"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="column has-text-left">
+                <div class="box">
+                  <div class="field">
+                    <label class="label">Name</label>
+                    <div class="control">
+                      <input class="input" type="text" placeholder="Text input">
+                    </div>
+                  </div>
+      
+                  <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control has-icons-left">
+                      <input class="input" type="email" placeholder="Email input" value="">
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                      </span>
+                    </div>
+                  </div>
+      
+                  <div class="field">
+                    <label class="label">Message</label>
+                    <div class="control">
+                      <textarea class="textarea" placeholder="Textarea"></textarea>
+                    </div>
+                  </div>
+      
+                  <div class="field is-grouped has-text-centered">
+                    <div class="control">
+                      <button class="button is-link is-large"><span class="icon">
+                          <i class="fas fa-envelope"></i>
+                        </span>
+                        <span>Submit</span></button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Bulma - Blog theme</strong> by <a href="https://gonzalojs.com">Gonzalo Gutierrez</a>. Based on the <a href="http://jigsaw-blog-staging.tighten.co/">jigsaw-blog</a>. The source code is licensed
+          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="../js/bulma.js"></script>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-auth.js"></script>
+    
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-analytics.js"></script>
+    
+        <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyDcyiTYuXB079aEy-971-2rku5R0YTMURI",
+            authDomain: "elbaul-8f23e.firebaseapp.com",
+            databaseURL: "https://elbaul-8f23e.firebaseio.com",
+            projectId: "elbaul-8f23e",
+            storageBucket: "elbaul-8f23e.appspot.com",
+            messagingSenderId: "319045151322",
+            appId: "1:319045151322:web:a4e3858ab330a3c2140663",
+            measurementId: "G-BCB4VGLWVE"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        </script>
+      <script>
+          function logout(){
+            firebase.auth().signOut().then(function(){
+                console.log("salio");
+                observador('');
+            }).catch(function(error){
+                console.log("Error");
+            });
+          }
+          function observador(user){
+            firebase.auth().onAuthStateChanged(function(user) {
+            if (user) {
+                var email = user.email;
+                console.log("Auth: " + email);
+                // User is signed in.
+                    /*
+                    var displayName = user.displayName;
+                    var email = user.email;
+                    var emailVerified = user.emailVerified;
+                    var photoURL = user.photoURL;
+                    var isAnonymous = user.isAnonymous;
+                    var uid = user.uid;
+                    var providerData = user.providerData;
+                    */
+                // ...
+            } else {
+                console.log("Logout Observador");
+                // User is signed out.
+                // ...
+            }
+            });
+          }
+      </script>    
+</body>
+
+</html>
